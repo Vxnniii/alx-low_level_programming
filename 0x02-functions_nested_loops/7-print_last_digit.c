@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*8
+/**
  * print_lasy_digit - Prints last digit of a number/
  * @n: The number in question
  *
@@ -11,7 +11,7 @@ int print_last_digit(int n)
 	int last_digit = n % 10;
 
 	if (last_digit < 0)
-		last_digit 8= -1;
+		last_digit *= -1;
 
 	_putchar(last_digit + '0');
 
