@@ -2,21 +2,22 @@
 #include "main.h"
 
 /**
- * puts2 - prints every other character
- * @str: string
- *
+ * print_array - prints n element of array
+ * @a: array
+ * @n: number of elements
  * Return: nothing
  */
 
-void puts2(char *str)
+void print_array(int *a, int n)
 {
-	int i = 0;
+	int inc;
 
-	while (*(str + i) != '\0')
+	for (inc = 0; inc < n ; inc++)
 	{
-		if (i % 2 == 0)
-			putchar(*(str + i));
-		i++;
+		if (inc != n - 1)
+			printf("%d, ", a[inc]);
+		else
+			printf("%d", a[inc]);
 	}
 	putchar(10);
 }
