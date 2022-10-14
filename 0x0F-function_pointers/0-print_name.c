@@ -2,12 +2,13 @@
 #include "function_pointers.h"
 
 /**
- * Print_name : Prints a name
+ * print_name - Prints any name entered
  * @name: name to print
  * @f: pointer to the printing function
  */
-void print_name(char *name, void (*f)(char *))
+
+void print_name(char *name, void (*f)(char *));
 {
-	if(name && f)
+	if (name && f)
 	f(name);
 }
